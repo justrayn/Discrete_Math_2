@@ -1,0 +1,83 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #0F0914;
+    font-family: Roboto, Helvetica, Arial, Sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.main-content
+{
+    margin-top: 5%;
+    align-items: flex-end;
+}
+.main-content hr
+{
+    border: 1px solid #40444B;
+}
+.filter1
+{
+    margin-left: 85%;
+}
+.event-content
+{
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+}
+.event-filter
+{
+    color: #fff;
+    width: 20%;
+}
+.event-list
+{
+    width: 60%;
+}
+.card-container
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.card, .card-body
+{
+    width: 240px;
+}
+.card-img-top
+{
+    height: 240px;
+    width: 240px;
+
+    /* gap inside cards */
+    margin-bottom: 4px; 
+    /* gap inside cards */
+}
+.card h5
+{
+    /* gap inside cards */
+    margin: 16px 0;
+    /* gap inside cards */
+
+    font-weight: 600;
+    font-size: 24px;
+}
+.card a
+{
+    /* gap inside cards */
+    margin-top: 8px;
+    /* gap inside cards */
+
+    background-color: #BDF9A1;
+    padding: 8px;
+    text-decoration: none;
+    color: #000;
+    
+}
+
+/* main filter */
+.filter
+{
+    background-color: #0A101D;
+}

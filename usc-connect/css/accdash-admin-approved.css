@@ -1,0 +1,137 @@
+/* Global reset and base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Geo', sans-serif;
+}
+
+.ads {
+    width: 100%;
+    height: 40vh;
+    background-color: #f5f5f5;
+}
+
+.myevents {
+    display: flex; 
+    width: 100%;
+    height: 70vh;
+    background-color: #0F0914;
+}
+
+/* Left sidebar */
+.leftmain {
+    position: relative;
+    top: 50px;
+    left: 50px;
+    width: 30%; 
+    padding: 20px;
+}
+
+.leftmain h2 {
+    margin-left: 10px;
+    color: #ffffff;
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+.dashboard {
+    margin-left: 10px;
+}
+
+.dashboard li {
+    list-style-type: none;
+    padding: 10px;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.dashboard a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.dashboard li:first-child a,
+.dashboard li:hover a {
+    color: #b2d12e;
+    text-decoration: underline;
+}
+
+/* Topbar */
+.topbar li {
+    display: inline-block;
+    position: relative;
+    top:50px;
+}
+
+.topbar li a {
+    display: block; 
+    padding: 10px 50px;
+    color: white;
+    background-color: #0A101D;
+    text-decoration: none;
+    transition: background-color 0.3s; 
+}
+
+.topbar li a:hover,
+.topbar li:nth-child(2) a {
+    background-color: #b2d12e; /* Background color on hover or for the first child */
+}
+/* Titles */
+.ongoing, .upcoming {
+    color: white;
+    position: relative;
+    top: 90px;
+    left: 15px;
+    font-size: 20px;
+}
+
+/* Table styling */
+.scndtopbar {
+    position: relative;
+    top: 65px;
+    width: 700px;
+    table-layout: fixed;
+    border-collapse: separate; 
+    border-spacing: 0 10px;
+    margin-top: 40px;
+}
+
+.scndtopbar th, .scndtopbar td {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #40444B;
+}
+
+.scndtopbar th {
+    border-right: 1px solid #FFFFFF;
+}
+
+.scndtopbar th:last-child {
+    border-right: none; 
+}
+
+/* Specific widths for the first column */
+.scndtopbar th:first-child, .scndtopbar td:first-child {
+    width: 50%; 
+    text-align: left;
+    padding-left: 20px;
+}
+
+.scndtopbar td:first-child img {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+}
+
+/* Hide upcoming events table header */
+.upcoming-events thead {
+    display: none;
+}
